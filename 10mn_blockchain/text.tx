@@ -1,0 +1,33 @@
+1) Qu'est ce que la Blockchain
+
+a) La Blockchain est en anglais un "Distributed and decentralized ledger"
+en francais cela signifie que c'est un registre simultanément enregistré et synchronisé sur un réseau d'ordinateurs, qui évolue par l'addition de nouvelles informations préalablement validées par l'entièreté du réseau et destinées à ne jamais être modifiées ou supprimées
+
+b) Ce registre enregistre des donnees comme transactions puis publie ces transactions a tout les noeuds du reseau formant ainsi des blocks de donnees lier les uns aux autres via des noeuds d'ou le therme Blockchain
+
+c) La Blockchain corespond donc a une collection de block de donnees chaque block ayant son unite de stockage:
+-) son champs de donnees corespondant aux transactions effectuer
+-) son hash (sa valeur unique generer aleatoirement par une fonction de hachage cryptographique)
+-) le hash du dernier block lier a celui-ci etant par consequant la cle pour mettre une chaine de block
+
+d) Un Distributed Ledger n’est rien d’autre qu’une base de donnée partagée à travers un réseau de personnes qui sont connectées entre elles avec leurs ordinateurs (noeuds) 
+
+-) Un ledger n’est géré par aucune autorité centrale. Tous les participants au sein d’un réseau répliquent et sauvegardent une copie identique du ledger qui se met indépendamment à jour sur chaque machine. Ils vont ensuite émettre un vote sur ces mises à jour pour s’assurer que la majorité est d’accord avec sa conclusion. Ce vote et cette entente sur une copie est appelé consensus et est effectué automatiquement par un algorithme. Une fois le consensus blockchain atteint entre les participants, la dernière version convenue du ledger est sauvegardée séparément par chacun.
+
+-) En effet les données peuvent être financières, physiques ou électroniques. La sécurité et l’exactitude des données stockés dans le ledger seront assurées cryptographiquement
+
+2) Qu'est ce qu'une Cryptomonaie
+
+a) Une cryptomonaie est un support numerique d'echange
+
+-) Une crypto possede une base de donees commune au sein de laquel tout le monde a acces, la est un des premiers points cle des crypto . Si tout le monde a acces a la base de donnee qu'est ce qui empecherait un individu mal intentioner de les modifier ?
+
+-) Afin de nulifier tout type de comportement de cette acabli les cryptomonaies utilises la cryptography afin de proteger leur blockchain qui est une technique qui utilise des algorithms afin de crypter ces donees
+
+-) L'application principal de la cryptography est de donnees a chaque individus une signature unique, afin d'effectuer n'importe quel transaction 
+
+-) Sans entree dans les details technique, une signature numerique est composer d'une cle publique et d'une cle prive ceci etant gerer part votre Wallet
+
+-) Le Wallet est un object qui store donc a la fois votre cle publique et votre cle prive 
+-) cle publique est l'addresse de votre wallet , c'est utiliser pour recevoir des crypto a cette adresse
+-) la cle prive permet au wallet de gerer la signature pour les transactions 
