@@ -1,3 +1,5 @@
+const { GENESIS_DATA } = require('./config')
+
 class Block
 {
     constructor({ timestamp, data, hash, lastHash })
@@ -7,17 +9,21 @@ class Block
         this.hash = hash
         this.lastHash = lastHash
     }
-}
-/*
-const FirstBlock = new Block
-({
-    timestamp:'01/01/01', 
-    data:'foo-data',
-    hash:'foo-hash',
-    lastHash: 'foo-lastHash'
-})
 
-console.log('FirstBlock', FirstBlock)
-*/
+    static genesis()
+    {
+        return new this(GENESIS_DATA)
+    }
+
+    static mineBlock({ lastBlock, data })
+    {
+        return new this(
+            {
+                timestamp: Date.now(),
+                lastHash: lastBlock,
+                data
+            })
+    }
+}
 
 module.exports = Block
