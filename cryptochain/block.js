@@ -20,7 +20,7 @@ class Block
         return new this(
             {
                 timestamp: Date.now(),
-                lastHash: lastBlock,
+                lastHash: lastBlock.hash,
                 data
             })
     }

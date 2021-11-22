@@ -1,5 +1,5 @@
-const Block = require('./block.js')
 const { GENESIS_DATA } = require('./config.js')
+const Block = require('./block.js')
 
 describe('Block', () => {
     const timestamp = 'a-date'
@@ -30,30 +30,33 @@ describe('Block', () => {
         {
             expect(genesisBlock).toEqual(GENESIS_DATA)
         })
+    })
 
-    describe('mineBlock()', () =>
+    describe('mineBlock', () => 
     {
         const lastBlock = Block.genesis()
-        const data = "mined data"
+        const data = "data mined"
         const minedBlock = Block.mineBlock({ lastBlock, data })
 
-    it ('returns a block of instance', () => 
-    {
-        expect(genesisBlock instanceof Block).toBe(true)
-    })
+        it ('returns a Block of instance', () =>
+        {
+            expect(minedBlock instanceof Block).toBe(true)
+        })
 
-    it ('sets the `lastHash` to be the `hash` of the last Block', () => 
-    {
-        expect(mineBlock.lastHash).toEqual(lastBlock.lastHash)
+        it ('sets the `lastHash` to be the `hash` of the lastBlock', () => 
+        {
+            expect(minedBlock.lastHash).toEqual(lastBlock.hash)
+        })
+
+        it ('sets the `data`', () => 
+        {
+            expect(minedBlock.data).toEqual(data)  
+        })
+
+        it ('sets the `timestamp`', () => 
+        {
+            expect(minedBlock.timestamp).not.toEqual(undefined)
+        })
+
     })
-    it ('sets a `data`', () =>
-    {
-        expect(minedBlock.data).toEqual(data)
-    })
-    it ('it sets a `timestamp`', () =>
-    {
-        expect(minedBlock.timestamp).not.toEqual(undefined)
-    })
-})
-})
 })
