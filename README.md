@@ -1,4 +1,4 @@
-# Blockchain Creation/ Cryptocurencies api tools
+# Blockchain manipulations / Cryptocurencies api tools
 - React.js
 - Redux.js
 - Node.js
